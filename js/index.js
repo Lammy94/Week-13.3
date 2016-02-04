@@ -98,6 +98,7 @@ function deleteFile()
 	fileEntry.remove(
 		function () {
 			alert("Deleted file");
+            delete(filetext);
 		}, 
 		fail
 	);
