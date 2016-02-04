@@ -95,11 +95,10 @@ function writeFile()
 //DELETE file
 function deleteFile()
 {
-	
+	 fileSystem.root.getFile("test.txt", {create: false, exclusive: false}, gotFileEntry, fail);
 	fileEntry.remove(
 		function () {
 			alert("Deleted file");
-            fileSystem.root.getFile("test.txt", {create: false, exclusive: false}, gotFileEntry, fail);
 		}, 
 		fail
 	);
