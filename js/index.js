@@ -99,7 +99,7 @@ function deleteFile()
 	fileEntry.remove(
 		function () {
 			alert("Deleted file");
-            fileEntry.remove(success, fail)
+            fileEntry.remove(filetext);
 		}, 
 		fail
 	);
