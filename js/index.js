@@ -86,6 +86,7 @@ function writeFile()
 	fileEntry.createWriter(
 		function (writer) { 
 			writer.write(filetext);
+			alert("File submitted");
 		}, 
 		fail
 	);
@@ -98,7 +99,6 @@ function deleteFile()
 	fileEntry.remove(
 		function () {
 			alert("Deleted file");
-            delete(filetext);
 		}, 
 		fail
 	);
