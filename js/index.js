@@ -99,7 +99,7 @@ function deleteFile()
 	fileEntry.remove(
 		function () {
 			alert("Deleted file");
-            fileEntry.remove(filetext);
+            fileSystem.root.getFile("test.txt", {create: false, exclusive: false}, gotFileEntry, fail);
 		}, 
 		fail
 	);
