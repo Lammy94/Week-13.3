@@ -95,7 +95,7 @@ function writeFile()
 //DELETE file
 function deleteFile()
 {
-	 fileSystem.root.getFile("test.txt", {create: false, exclusive: false}, gotFileEntry, fail);
+	 fileSystem.root.getFile("test.txt", {create: false}, gotFileEntry, fail);
 	fileEntry.remove(
 		function () {
 			alert("Deleted file");
